@@ -1,0 +1,48 @@
+{
+    "keyboard_name": "Dactyl Manuform (6x7)",
+    "manufacturer": "daijikaijuu",
+    "url": "",
+    "maintainer": "daijikaijuu",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": true,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "rgb_matrix": true
+    },
+    "matrix_pins": {
+        "cols": ["GP15", "GP14", "GP13", "GP12", "GP11", "GP10", "GP9"],
+        "rows": ["GP16", "GP17", "GP18", "GP19", "GP20", "GP21", "GP22"]
+    },
+    "rgb_matrix": {
+        "driver": "ws2812",
+        "led_count": 1,
+        "max_brightness": 150,
+        "default": {
+            "on": true
+        },
+        "animations": {
+            "breathing": true
+        },
+        "layout": [{ "flags": 1, "matrix": [0, 0], "x": 0, "y": 0 }]
+    },
+    "ws2812": {
+        "pin": "GP5",
+        "driver": "vendor"
+    },
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x0000",
+        "vid": "0xFEED"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [{ "label": "LP00", "matrix": [0, 0], "x": 0, "y": 0 }]
+        }
+    }
+}
